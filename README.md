@@ -42,7 +42,7 @@ Before installing the python3 requirements , please install the ChromiumDriver a
 ##
 
 ### Usage
-> Please run the following command for Production.
+> Please run the following command for Production server.
 ```bash
 gunicorn -w 10 'app:create_app()'
 ```
