@@ -1,0 +1,28 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet';
+
+#pc_form{
+    margin-top: 50px;
+}
+
+#pc_form .form_header{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#pc_form button{
+    text-align: center;
+}
+#pc_form .card-header{
+    background-color: #6f6486;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+#pc_form .form-group .label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}

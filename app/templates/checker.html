@@ -1,0 +1,56 @@
+{% extends "base.html" %} 
+{% block title %}Proxy Checker{% endblock %}
+{% block welcome %} {% endblock %}
+{% block body_section %}
+<div class="container" id="pc_form">
+    <section id="wrapper">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Proxy Checker</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <div class="form_header">
+                                <p>Enter a proxy to check</p>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label for="proxy">Proxy</label>
+                                <input type="text" class="form-control" id="proxy" name="proxy" placeholder="Proxy" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="port">Port</label>
+                                <input type="text" class="form-control" id="port" name="port" placeholder="Port" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="protocol">Protocol</label>
+                                <select class="form-select"  id="protocol" name="protocol" required>
+                                    <option selected>Choose the proxy type</option>
+                                    <option value="https">http/https</option>
+                                    <option value="socks4">socks4</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeout">Timeout</label>
+                                <input type="text" class="form-control" id="timeout" name="timeout" placeholder="Timeout, default is 10 sec">
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-primary">Validate</button>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+{% block custom_css %}
+<link 
+    rel= "stylesheet" 
+    type= "text/css" 
+    href= "{{ url_for('static',filename='/css/checker.css') }}">
+{% endblock %}

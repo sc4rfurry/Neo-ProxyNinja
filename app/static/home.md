@@ -20,41 +20,6 @@ Web-Application for Python script to get https or socks(4) proxies by scraping t
 
 >> 🚨 This script **Un-Officially** supports Windows and Mac OS.
 ##
-
-### 📚 Requirements
-> - Python 3.9+
-> - ChromeDriver
-> - Selenium
-> - Flask
-
-##
-
-### Installation
-
-Before installing the python3 requirements , please install the ChromiumDriver as following debian/kali
-
-```bash
-    sudo apt-get update && sudo apt-get full-upgrade -y
-    sudo apt-get install chromium-driver
-    python3 -m pip install -r requirements.txt
-```
-
-##
-
-### Usage
-> Please run the following command for Production.
-```bash
-gunicorn -w 10 'app:create_app()'
-```
-OR
-
-> For Development server
-```bash
-python3 Neo-ProxyNinja.py
-```
-
-##
-
 ### 🗿 Pypi
 > Proxy Ninja is also available as [python3](https://www.python.org/) module on [Pypi](https://pypi.org/).
 
@@ -75,21 +40,11 @@ python3 Neo-ProxyNinja.py
 
 ## Features
 
-- Web UI written in flask
 - ChromeDriver to scrape the site.
 - Stealth Profle implmented.
 - save output in txt or json format.
 - User Friendly. :D
 
-## ToDo
-- Proxy Checker backend implementation.
-- Optimize the workflow
-- Application Optimization
-- More bugs to fix
-
-## Known Issues
-
-- Checker tab's backend is not implemented yet.
 
 ## License
 

@@ -1,0 +1,49 @@
+{% extends "base.html" %} 
+{% block title %}Socks Proxies{% endblock %}
+{% block welcome %} {% endblock %}
+{% block body_section %}
+<div class="container-fluid" id="proxies_div">
+  <section id="wrapper">
+    <div class="card">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table caption-top">
+            {{data_len}}
+            <caption>
+              List of proxies
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">IP Address</th>
+                <th scope="col">Port</th>
+                <th scope="col">Country</th>
+                <th scope="col">Anonymity</th>
+                <th scope="col">Google</th>
+                <th scope="col">Https</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                {% for item in data %}
+                <td>{{item['IP Address']}}</td>
+                <td>{{item['Port']}}</td>
+                <td>{{item['Country']}}</td>
+                <td>{{item['Anonymity']}}</td>
+                <td>{{item['Google']}}</td>
+                <td>{{item['Https']}}</td>
+              </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+{% block custom_css %}
+<link 
+    rel= "stylesheet" 
+    type= "text/css" 
+    href= "{{ url_for('static',filename='/css/proxies.css') }}">
+{% endblock %}

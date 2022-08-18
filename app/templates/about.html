@@ -1,0 +1,20 @@
+{% extends "base.html" %} 
+{% block title %}About{% endblock %}
+{% block welcome %} {% endblock %}
+{% block body_section %}
+<div class="container" id="about_div">
+  <section id="wrapper">
+    <div class="card">
+      <div class="card-body">
+        {{about_md | markdown}}
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+{% block custom_css %}
+<link 
+    rel= "stylesheet" 
+    type= "text/css" 
+    href= "{{ url_for('static',filename='/css/about.css') }}">
+{% endblock %}

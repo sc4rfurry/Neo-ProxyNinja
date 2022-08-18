@@ -1,0 +1,13 @@
+{% extends "base.html" %} 
+{% block user %}<b style="color: red;">{{user}}</b>{% endblock %} 
+{% block body_section %}
+<div class="container">
+  <section id="wrapper">
+    <div class="card">
+      <div class="card-body">
+        {{home_md | markdown}}
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

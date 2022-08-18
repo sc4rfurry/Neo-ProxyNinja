@@ -1,0 +1,78 @@
+{% extends "base.html" %} 
+{% block title %}Proxies{% endblock %}
+{% block welcome %} {% endblock %}
+{% block body_section %}
+<div class="container" id="proxies_div">
+  <section id="wrapper">
+    <div class="card">
+        <div class="card-header">
+            <h4>Proxy Grabber</h4>
+        </div>
+      <div class="card-body">
+        <form method="post">
+            <div class="form_header">
+                <p>Fetch Https/Socks4 proxies.</p>
+            </div>
+            <hr>
+            <div class="form-group"  required>
+                <label for="protocol">Protocol</label>
+                <select class="form-select"  id="protocol" name="protocol">
+                    <option selected>Choose the proxy type</option>
+                    <option value="https">http/https</option>
+                    <option value="socks4">socks4</option>
+                </select>
+            </div>
+            <br>
+              <div class="form-check">
+                <input type="checkbox" id="trigger" name="save_file">
+                <label class="form-check-label" for="trigger">
+                  Save to file
+                </label>
+              </div>
+                <div class="form-check" id="filename_input">
+                    <label for="filename">Filename</label>
+                        <input type="text" class="form-control" id="filename" name="filename" placeholder="filename">
+                </div>
+                <div class="form-group" id="format_select">
+                    <label for="format">Format</label>
+                    <select class="form-select"  id="format" name="format">
+                        <option selected>Choose the file format</option>
+                        <option value="json">json</option>
+                        <option value="txt">txt</option>
+                    </select>
+                </div>
+            <br>
+            {% if message != "None" %}
+            <div class="alert alert-danger" id="message">
+              <strong>Error!</strong> {{message}}
+            </div>
+            {% else %}
+            <br>
+            {% endif %}
+            {% if success != "None" %}
+            <div class="alert alert-success">
+              <strong>Success!</strong> {{success}}
+            </div>
+            {% else %}
+            <br>
+            {% endif %}
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-primary" id="fetch_btn">Fetch</button>
+              </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+{% block custom_css %}
+<link 
+    rel= "stylesheet" 
+    type= "text/css" 
+    href= "{{ url_for('static',filename='/css/proxies.css') }}">
+{% endblock %}
+{% block custom_js %}
+<script 
+        type=text/javascript
+        src="{{ url_for('static',filename='/js/proxies.js') }}"></script>
+{% endblock %}

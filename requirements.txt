@@ -1,0 +1,4 @@
+flask
+gunicorn
+proxy-ninja
+Flask-Markdown
