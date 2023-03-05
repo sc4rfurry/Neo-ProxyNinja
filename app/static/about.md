@@ -2,8 +2,9 @@
 
 ##
 # Neo ProxyNinja
-Web-GUI in flask for [Proxy Ninja](https://badge.fury.io/gh/sc4rfurry%2FProxy-Ninja).
+Web-UI in flask for [ProxyNinja-ng](https://github.com/sc4rfurry/ProxyNinja-ng).
 
+#
 ### 🔧 Technologies & Tools
 
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat-square&logo=kali-linux&logoColor=white&color=5194f0&bgcolor=110d17)
@@ -11,6 +12,9 @@ Web-GUI in flask for [Proxy Ninja](https://badge.fury.io/gh/sc4rfurry%2FProxy-Ni
 ![](https://img.shields.io/badge/Language-python-informational?style=flat-square&logo=python&logoColor=white&color=5194f0&bgcolor=110d17)
 ![](https://img.shields.io/badge/framework-flask-informational?style=flat-square&logo=flask&logoColor=white&color=5194f0&bgcolor=110d17)
 ##
+
+#
+
 ### Operating System(Tested)
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 
@@ -19,14 +23,15 @@ Web-GUI in flask for [Proxy Ninja](https://badge.fury.io/gh/sc4rfurry%2FProxy-Ni
 >> 🚨 This script **Un-Officially** supports Windows and Mac OS.
 ##
 
-
-
+#
 ## Author
+</br>
+
 ![Author](https://shields.io/badge/Author-sc4rfurry-green?logo=appveyor&style=plastic)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sc4rfurry)
 
 
---------------------------------------------------------------------------------------------------
+#
+
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
