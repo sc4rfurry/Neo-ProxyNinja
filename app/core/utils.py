@@ -55,7 +55,7 @@ class ProxiesChecker:
         try:
             proxy = urllib3.ProxyManager(f"http://{proxy}:{port}")
             response = proxy.request("GET", "http://ifconfig.io", timeout=int(timeout))
-            print(response.status)
+            # print(response.status)
             if response.status == 200:
                 return True
             else:
