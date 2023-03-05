@@ -46,11 +46,8 @@
             <div class="alert alert-danger" id="message">
               <strong>Error!</strong> {{message}}
             </div>
-            {% else %}
-            <br>
-            {% endif %}
-            {% if success != "None" %}
-            <div class="alert alert-success">
+            {% elif success != "None" %}
+            <div class="alert alert-success" id="message">
               <strong>Success!</strong> {{success}}
             </div>
             {% else %}

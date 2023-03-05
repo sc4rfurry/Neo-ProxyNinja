@@ -4,7 +4,7 @@
 
 ##
 # Neo ProxyNinja
-Web-Application for Python script to get https or socks(4) proxies by scraping the web using StealthChromiumDriver.
+A flask Web-Application that Fetches free proxies (HTTP/HTTPS/Socks4) from websites and api's using [ProxyNinja-ng](https://pypi.org/project/proxy-ninja-ng/).
 
 ### 🔧 Technologies & Tools
 
@@ -21,16 +21,22 @@ Web-Application for Python script to get https or socks(4) proxies by scraping t
 >> 🚨 This script **Un-Officially** supports Windows and Mac OS.
 ##
 ### 🗿 Pypi
-> Proxy Ninja is also available as [python3](https://www.python.org/) module on [Pypi](https://pypi.org/).
+> ProxyNinja-ng is also available as [python3](https://www.python.org/) module on [Pypi](https://pypi.org/).
 
-- Pypi package [Proxy Ninja](https://pypi.org/project/proxy-ninja/)
+- Pypi package [ProxyNinja-ng](https://pypi.org/project/proxy-ninja-ng/)
 
-[![PyPI version](https://badge.fury.io/py/proxy-ninja.svg)](https://badge.fury.io/py/proxy-ninja)
+[![PyPI version](https://badge.fury.io/py/proxy-ninja-ng.svg)](https://badge.fury.io/py/proxy-ninja-ng)
+
+- Info 
+
+[![Downloads](https://pepy.tech/badge/proxy-ninja-ng)](https://pepy.tech/project/proxy-ninja-ng)
+[![Downloads](https://pepy.tech/badge/proxy-ninja-ng/month)](https://pepy.tech/project/proxy-ninja-ng/month)
+[![Downloads](https://pepy.tech/badge/proxy-ninja-ng/week)](https://pepy.tech/project/proxy-ninja-ng/week)
 ##
 
 ### ⚡️Github
 [![GitHub version](https://badge.fury.io/gh/sc4rfurry%2FProxy-Ninja.svg)](https://badge.fury.io/gh/sc4rfurry%2FProxy-Ninja)
-> See the **cli** version on [github](https://github.com/sc4rfurry/Proxy-Ninja) for Installation and Usage.
+> See the **cli** version on [github](https://github.com/sc4rfurry/ProxyNinja-ng) for Installation and Usage.
 
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -40,9 +46,10 @@ Web-Application for Python script to get https or socks(4) proxies by scraping t
 
 ## Features
 
-- ChromeDriver to scrape the site.
-- Stealth Profle implmented.
+- ~~ChromeDriver to scrape the site.~~
+- Uses python `requests` to fetch the proxies.
 - save output in txt or json format.
+- Implemented ProxyChecker. (Only for HTTP/HTTPS proxies for now)
 - User Friendly. :D
 
 
