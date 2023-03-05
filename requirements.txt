@@ -1,5 +1,9 @@
+wheel
 flask
 gunicorn
-proxy-ninja
+urllib3
+PySocks
+requests
 Flask-Markdown
-setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+proxy-ninja-ng
+setuptools>=65.5.1

@@ -10,16 +10,12 @@
           <table class="table caption-top">
             {{data_len}}
             <caption>
-              List of proxies
+              List of <span style="color: chocolate;">Socks4</span> proxies
             </caption>
             <thead>
               <tr>
                 <th scope="col">IP Address</th>
                 <th scope="col">Port</th>
-                <th scope="col">Country</th>
-                <th scope="col">Anonymity</th>
-                <th scope="col">Google</th>
-                <th scope="col">Https</th>
               </tr>
             </thead>
             <tbody>
@@ -27,10 +23,6 @@
                 {% for item in data %}
                 <td>{{item['IP Address']}}</td>
                 <td>{{item['Port']}}</td>
-                <td>{{item['Country']}}</td>
-                <td>{{item['Anonymity']}}</td>
-                <td>{{item['Google']}}</td>
-                <td>{{item['Https']}}</td>
               </tr>
                 {% endfor %}
             </tbody>
