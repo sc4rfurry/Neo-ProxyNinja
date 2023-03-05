@@ -66,11 +66,9 @@ A flask Web-Application that Fetches free proxies (HTTP/HTTPS/Socks4) from websi
 
 ## Installation
 
-Before installing the python3 requirements , please install the ChromiumDriver as following debian/kali
+Before installing the python3 requirements:
 
 ```bash
-    sudo apt-get update && sudo apt-get full-upgrade -y
-    sudo apt-get install chromium-driver
     python3 -m pip install -r requirements.txt
 ```
 
