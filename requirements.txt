@@ -5,4 +5,4 @@ PySocks
 requests
 Flask-Markdown
 proxy-ninja-ng
-setuptools>=65.5.1
+setuptools>=70.0.0
